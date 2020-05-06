@@ -25,7 +25,7 @@ linkedin_username: antoine-laroche-a5a65416a
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-slate
 plugins:
   - jekyll-feed
   - jekyll-sitemap
