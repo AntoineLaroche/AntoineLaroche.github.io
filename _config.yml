@@ -16,10 +16,9 @@
 title: LarocheLab
 email: antoine_laroche7@hotmail.fr
 description: >- # this means to ignore newlines until "baseurl:"
-  My professional blog where I share my opinions,
-  and insights about the profession of software developper.
+  My professional blog where I share my opinions and insights about the profession of software developer.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://antoinelaroche.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://larochelab.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: AntoineLaroche
 linkedin_username: antoine-laroche-a5a65416a
 
