@@ -66,14 +66,14 @@ Now let's see the same snippets refactored with yield return.
 You now see what seems to be an infinite loop with the `while true`! Well it's not one (kind of).
 So as I've wrote the _yield return_ allows for _deferred execution_.
 
-So when the executed instruction reaches the yield return, the execution return to the caller of the function but, it keeps in memory where it was and picks up from there on the next iteration.
+When the executed instruction reaches the yield return, the execution return to the caller of the function but, it keeps in memory where it was and picks up from there on the next iteration.
 
 It's kind of hard to explain so let's see what it does looks like in debug:
 ![yield return debug next step]({{ site.baseurl }}/images/yield-return.gif "yield return exemple")
 
-So as you can see, only one element of the sequence is returned each time, as opposed to the first exemple where the whole sequence was return in one shot.
+As you can see, only one element of the sequence is returned each time, as opposed to the first exemple where the whole sequence was return in one shot.
 Why would you want to use this ? When you have a large sequence to iterate on, it's a better use case because it will use less memory and will be potentially faster.
 
 Consider reading a file line by line as opposed to read the whole file in one big chunk to store it in memory. First you could run out of memory if it's a really big file! Second not using yield return can remove the gain to do a Parallel ForEach because the whole sequence must be computed before having a Parallel ForEach used on it.
 
-Finally, In the course I've talked about in the beginning, I've also learned that this is called a [generator](<https://en.wikipedia.org/wiki/Generator_(computer_programming)>){:target="\_blank"} in computer science. A lot of the most popular language has this feature in kind or another!
+Finally, in the course I've talked about in the beginning, I've learned that this is called a [generator](<https://en.wikipedia.org/wiki/Generator_(computer_programming)>){:target="\_blank"} in computer science. A lot of the most popular language has this feature in some kind of form or another!
