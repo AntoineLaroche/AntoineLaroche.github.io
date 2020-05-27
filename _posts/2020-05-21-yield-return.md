@@ -5,7 +5,7 @@ categories: [dotnet, csharp]
 tags: [yield, enumerable, generator]
 ---
 
-While I was doing the online course [Python for the .NET developer](https://training.talkpython.fm/courses/details/python-for-dotnet-developers){:target="\_blank"} I've come accross the [yield return feature of C#](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/yield){:target="\_blank"}. I was suprised to learn it was in the language since V2.0 and I've never seen it used in any codebased I've worked in.
+While I was doing the online course [Python for the .NET developer](https://training.talkpython.fm/courses/details/python-for-dotnet-developers){:target="\_blank"} I've come across the [yield return feature of C#](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/yield){:target="\_blank"}. I was surprised to learn it was in the language since V2.0 and I've never seen it used in any codebase I've worked in.
 
 So what does is do ?
 It's a contextual keyword used in a function which return an IEnumerable. It allows for _deferred execution_. It means that the evaluation of an expression is delayed until its realized value is actually required.
@@ -69,9 +69,9 @@ So as I've wrote the _yield return_ allows for _deferred execution_.
 When the executed instruction reaches the yield return, the execution return to the caller of the function but, it keeps in memory where it was and picks up from there on the next iteration.
 
 It's kind of hard to explain so let's see what it does looks like in debug:
-![yield return debug next step]({{ site.baseurl }}/images/yield-return.gif "yield return exemple")
+![yield return debug next step]({{ site.baseurl }}/images/yield-return.gif "yield return example")
 
-As you can see, only one element of the sequence is returned each time, as opposed to the first exemple where the whole sequence was return in one shot.
+As you can see, only one element of the sequence is returned each time, as opposed to the first example where the whole sequence was return in one shot.
 Why would you want to use this ? When you have a large sequence to iterate on, it's a better use case because it will use less memory and will be potentially faster.
 
 Consider reading a file line by line as opposed to read the whole file in one big chunk to store it in memory. First you could run out of memory if it's a really big file! Second not using yield return can remove the gain to do a Parallel ForEach because the whole sequence must be computed before having a Parallel ForEach used on it.
