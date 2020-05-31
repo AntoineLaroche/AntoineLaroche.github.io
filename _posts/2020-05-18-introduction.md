@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Introduction
+tags: [miscellaneous]
 ---
 
 **Hello friend** I've named this blog LarocheLab, because I want to share my findings and experiences in the world of software development. Also because I thought it was a catchy name :-)
