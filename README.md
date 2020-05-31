@@ -5,4 +5,4 @@ My professional blog
 
 I will focus mainly the world of .NET development but also in ways of developing software, organize works and teams. It will also be a place for me to store information about various products, libraries and techniques and stories I've lived in my career.
 
-This blog is powered by [Jekyll](https://jekyllrb.com/){:target="\_blank"} a powerful static website generator.
+This blog is powered by [Jekyll](https://jekyllrb.com/) a powerful static website generator.
