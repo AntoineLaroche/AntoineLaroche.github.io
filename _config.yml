@@ -26,6 +26,7 @@ disqus:
   shortname: https-www-larochelab-com
 show_drafts: false
 future: false
+timezone: America/New_York
 
 # Build settings
 markdown: kramdown
