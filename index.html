@@ -4,7 +4,7 @@ layout: page
 ---
 
 <ul style="list-style-type: none;">
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
   <li>
     <h3>
       <a href="{{ post.url }}">{{ post.title }}</a>
@@ -22,7 +22,27 @@ layout: page
   </li>
   {% endfor %}
 </ul>
-<br />
-<br />
-subscribe via
-<a href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml">RSS</a>
+
+<!-- Pagination links -->
+<div class="pagination" style="text-align: center;">
+  {% if paginator.previous_page %}
+  <a href="{{ paginator.previous_page_path }}" class="previous">
+    Previous
+  </a>
+  {% else %}
+  <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number">
+    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+  </span>
+  {% if paginator.next_page %}
+  <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% else %}
+  <span class="next">Next</span>
+  {% endif %}
+  <br />
+  subscribe via
+  <a href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml"
+    >RSS</a
+  >
+</div>
