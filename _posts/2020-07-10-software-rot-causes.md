@@ -20,10 +20,10 @@ So why does a codebase or a system rots? The causes are many and this post will 
 <hr/>
 <br/>
 
-#### Feature creeps
+#### Feature creep
 
 ![Too much features]({{ site.baseurl }}/images/swiss_army_knife.jpg "I'm confused")
-More features is always a good thing right ? Well no, it can really be the opposite especially when the new features are poorly thought out and rushed to production without any good idea with how to measure its usage and success. It can often lead to over design and complication and start to confuse the users more than it can deliver values to them. It can also start to push the dev teams to rush the delivery of features and hack them all together which produces a cobbled together codebase over time.
+More features is always a good thing right ? Well no, it can really be the opposite especially when the new features are poorly thought out and rushed to production without any good idea with how to measure its usage and success. It can often lead to over design and complication and start to confuse the users more than it can deliver values to them. It can also start to push the dev teams to rush the delivery of features and hack them all together which produces a cobbled together codebase over time. In fact, one of the purposes of the agile methodology was to quickly gather feedback about what brings value to the software users quickly in order to help the dev teams to know on what to put the real effort and quickly discard what does not bring enough value to users.
 
 <br/>
 
